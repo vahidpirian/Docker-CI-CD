@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  host:
+    container_name: host
+    image: host
+    build:
+      context: .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+    hostname: host
+    networks:
+      - jn-net
+
+networks:
+  jn-net:
