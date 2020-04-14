@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  java:
+    image: "vahidpirian/$IMAGE:$TAG"
+    container_name: java
