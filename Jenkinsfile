@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Build') {
             steps {
                 sh '''
@@ -10,10 +11,17 @@ pipeline {
                    '''
             }
         }
+
         stage('Test') {
             steps {
                 sh './jenkins/test/test.sh mvn test'
    	    }
 	}
+
+        stage('Test') {
+            steps {
+                sh './jenkins/push/script.sh'
+            }
+        }
     }
 }
