@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
  #########################################################
  ## This script for build jar from maven:3-alpine image ##
