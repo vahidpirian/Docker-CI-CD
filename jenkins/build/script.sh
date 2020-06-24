@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 ############################################
 ## Copy the new jar to the build location ## 
